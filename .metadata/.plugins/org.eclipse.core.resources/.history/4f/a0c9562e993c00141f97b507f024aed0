@@ -1,0 +1,29 @@
+package jdbc2;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class StatementEx {
+	
+	public static void main(String[] args) throws Exception {
+		
+		// try ~ with Resources(TWR) Auto Closer
+		// 이렇게 코딩하면 Finally 안써도 된다. 
+		String driverName="";
+		String urlPath="";
+		
+		String sql = "select sysdate from dual";
+		
+		Class.forName(driverName);
+		
+		try(
+				Connection con = DriverManager.getConnection(urlPath, "","");
+			){
+			
+		}catch(Exception e){
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package jdbc2;
+
+import java.sql.Connection;
+
+public class MyConnection  implements Connection {
+	
+	public MyConnection(Connection con, MyConnectionPool pool){
+		this.realCon = con;
+		this.pool = pool;
+	}
+	
+	
+
+}

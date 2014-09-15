@@ -1,0 +1,15 @@
+package example;
+
+public abstract class AbsMakingAgent {
+	
+	public void prepareWater(){
+		System.out.println("물을 준비합니다.");
+	}
+	
+	public abstract void doJob();
+	
+	public void preparePlate(){
+		System.out.println("접시에 담습니다.");
+	}
+
+}

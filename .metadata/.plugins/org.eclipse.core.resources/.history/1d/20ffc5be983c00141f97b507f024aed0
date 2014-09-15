@@ -1,0 +1,19 @@
+package jdbc2;
+
+public class StatementEx {
+	
+	public static void main(String[] args) {
+		
+		// try ~ with Resources(TWR) Auto Closer
+		String driverName="";
+		String urlPath="";
+		
+		try(){
+			
+		}catch(Exception e){
+			
+		}
+
+	}
+
+}

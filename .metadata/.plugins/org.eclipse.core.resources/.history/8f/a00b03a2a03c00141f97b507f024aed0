@@ -1,0 +1,24 @@
+package jdbc2;
+
+import java.sql.Connection;
+import java.util.List;
+import java.util.Vector;
+
+public class MyConnectionPool {
+	
+	List<Connection> conList;
+	
+	private static MyConnectionPool instance = new MyConnectionPool();
+	
+	public static MyConnectionPool getInstance(){
+		return instance;
+	}
+	
+	private MyConnectionPool(){
+		conList = new Vector<Connection>();
+		
+		Class.forName("oracle.jdbc.OracleDriver");
+	}
+	
+
+}

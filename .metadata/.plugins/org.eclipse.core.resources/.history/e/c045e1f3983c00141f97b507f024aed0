@@ -1,0 +1,24 @@
+package jdbc2;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class StatementEx {
+	
+	public static void main(String[] args) throws Exception {
+		
+		// try ~ with Resources(TWR) Auto Closer
+		String driverName="";
+		String urlPath="";
+		
+		Class.forName(driverName);
+		
+		try(Connection con = DriverManager.getConnection(urlPath, "","")){
+			
+		}catch(Exception e){
+			
+		}
+
+	}
+
+}
