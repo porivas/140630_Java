@@ -1,0 +1,46 @@
+package org.han.foodstore.dao;
+
+import org.han.foodstore.util.SqlAgent;
+import org.han.vo.StoreVO;
+
+public class FoodStoreDAOImpl implements FoodStoreDAO {
+	
+	enum SQL{
+		
+		INSERT(" insert into tbl_yh_store (sno, sname, addr, keyword, tel, sdesc) values(sql_store.nextval, ?, ?, ?, ?, ?)");
+		
+		String value;
+		
+		SQL(String value){
+			this.value = value;
+		}
+	}
+
+	@Override
+	public void create(StoreVO vo) throws Exception {
+		// sname, addr, keyword, tel, sdesc
+		new SqlAgent(){
+			
+		}.doExecute();
+
+	}
+
+	@Override
+	public StoreVO read(Integer sno) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(StoreVO vo) throws Exception {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete(Integer sno) throws Exception {
+		// TODO Auto-generated method stub
+
+	}
+
+}

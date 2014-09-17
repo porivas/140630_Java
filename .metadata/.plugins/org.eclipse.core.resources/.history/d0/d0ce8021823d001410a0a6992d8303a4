@@ -1,0 +1,41 @@
+package org.han.foodstore.test;
+
+import static org.junit.Assert.fail;
+
+import org.han.foodstore.dao.FoodStoreDAO;
+import org.han.foodstore.dao.FoodStoreDAOImpl;
+import org.han.vo.StoreVO;
+import org.junit.Before;
+import org.junit.Test;
+
+public class FoodStoreDAOTest {
+	
+	FoodStoreDAO dao;
+
+	@Before
+	public void setUp() throws Exception {
+		dao = new FoodStoreDAOImpl();
+	}
+
+	@Test
+	public void testInsert() {
+		try{
+			StoreVO vo = new StoreVO();
+				vo.setSname("동경우동");
+				vo.setAddr("서울 중구....");
+				vo.setKeyword("우동");
+				vo.setSdesc("줄 서서 기다려야 함");
+				
+				dao.create(vo);
+				
+		}catch(Exception e){
+			fail(e.getMessage());
+		}
+	}
+	
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

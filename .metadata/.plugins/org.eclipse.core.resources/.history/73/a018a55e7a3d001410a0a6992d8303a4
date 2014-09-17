@@ -1,0 +1,31 @@
+package org.han.foodstore.dao;
+
+import org.han.vo.StoreVO;
+
+public class FoodStoreDAOImpl implements FoodStoreDAO {
+
+	@Override
+	public void create(StoreVO vo) throws Exception {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public StoreVO read(Integer sno) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(StoreVO vo) throws Exception {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete(Integer sno) throws Exception {
+		// TODO Auto-generated method stub
+
+	}
+
+}

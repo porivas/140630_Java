@@ -1,0 +1,22 @@
+package org.han.vo;
+
+/**
+ *sno number,
+  sname varchar2(500) not null, -- null이 들어간 테이블은 인덱스를 태울 수 없다. 
+  addr varchar2(500), 
+  keyword varchar2(500) not null,
+  tel varchar2(20), 
+  sdesc varchar2(1000) not null, 
+  regdate date default sysdate
+  view cnt
+
+ * @author Administrator
+ *
+ */
+
+
+public class StoreVO {
+	
+	
+
+}

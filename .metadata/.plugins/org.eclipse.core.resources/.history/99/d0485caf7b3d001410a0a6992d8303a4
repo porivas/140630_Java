@@ -1,0 +1,34 @@
+package org.han.foodstore.test;
+
+import static org.junit.Assert.fail;
+
+import org.han.foodstore.dao.FoodStoreDAO;
+import org.han.foodstore.dao.FoodStoreDAOImpl;
+import org.han.vo.StoreVO;
+import org.junit.Before;
+import org.junit.Test;
+
+public class FoodStoreDAOTest {
+	
+	FoodStoreDAO dao;
+
+	@Before
+	public void setUp() throws Exception {
+		dao = new FoodStoreDAOImpl();
+	}
+
+	@Test
+	public void testInsert() {
+		try{
+			new StoreVO
+		}catch(Exception e){
+			fail(e.getMessage());
+		}
+	}
+	
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}
