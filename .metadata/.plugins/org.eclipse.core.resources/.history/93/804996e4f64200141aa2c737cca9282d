@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>INPUT JSP PAGE</h1>
+	
+	<h4>${watch[0]}</h4>
+	<h4>${name} Ver 1.7</h4>
+
+	<h1>	
+			<form>
+			<input type='text' name='v1'>
+			<select name='oper'>
+				<option value=“1” >+</option>
+				<option value=“2” >-</option>
+				<option value=“3” >*</option>
+				<option value=“4” >/</option>
+			</select>
+			<input type='text' name='v2'>
+			<input type='submit'>
+			</form>
+			<iframe name = "zeroframe" >
+			<output type='text' name='result'>
+			</iframe>
+	</h1>	
+	
+</body>
+</html>

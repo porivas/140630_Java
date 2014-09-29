@@ -97,7 +97,6 @@ public class FoodStoreDAOImpl implements FoodStoreDAO {
 					throw new Exception("UPDATE ERROR");
 				}
 			}
-
 		}.doExecute();
 	}
 
@@ -116,7 +115,5 @@ public class FoodStoreDAOImpl implements FoodStoreDAO {
 				}
 			}
 		}.doExecute();
-
 	}
-
 }

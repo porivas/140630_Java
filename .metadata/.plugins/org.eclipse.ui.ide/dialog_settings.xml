@@ -2,17 +2,19 @@
 <section name="Workbench">
 	<section name="ExternalProjectImportWizard">
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
-		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="C:\Development\Github\140908_Java\WebContent"/>
-			<item value="C:\Development\Github\140908_Java\TestApplication1"/>
-			<item value="C:\Development\Github\140908_Java\Servers"/>
-			<item value="C:\Development\Github\140908_Java\Quiz"/>
-			<item value="C:\Development\Github\140908_Java\MyFirstApp"/>
+			<item value="C:\Users\Administrator\Desktop\mp3 (2) (2)"/>
+			<item value="C:\Users\Administrator\Desktop\카카오톡 받은 파일\mp32"/>
+			<item value="C:\Users\Administrator\Desktop\카카오톡 받은 파일\Day0929Mp32"/>
+			<item value="C:\Users\Administrator\Desktop\mp3 (2)"/>
+			<item value="C:\Users\Administrator\Desktop\카카오톡 받은 파일\Day0926Mp3"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>

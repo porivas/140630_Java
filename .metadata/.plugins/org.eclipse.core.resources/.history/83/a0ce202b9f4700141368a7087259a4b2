@@ -1,0 +1,5 @@
+package org.han.mp32.controller;
+
+public @interface WebServlet {
+
+}

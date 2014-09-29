@@ -1,0 +1,11 @@
+package org.thinker.mp32.vo;
+
+import org.test.thinker.service.Mp3ServiceImpl;
+import org.thinker.mp32.vo.MP3;
+
+public interface Mp3Service {
+	public Mp3Service instance = new Mp3ServiceImpl();
+	
+	public List<MP3> getFolderList ();
+	
+}

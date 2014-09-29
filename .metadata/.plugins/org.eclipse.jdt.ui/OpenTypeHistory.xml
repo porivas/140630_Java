@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=140915_JDBC/src&lt;jdbc2{TimeDAO.java[TimeDAO" modifiers="513" timestamp="1410770234694"/>
-<typeInfo handle="=140916_JDBC/src&lt;org.han.foodstore.dao{FoodStoreDAO.java[FoodStoreDAO" modifiers="513" timestamp="1410853902526"/>
+<typeInfo handle="=140917_JDBC/src&lt;org.han.storeuser.dao{StoreUserDAO.java[StoreUserDAO" modifiers="513" timestamp="1410924532754"/>
+<typeInfo handle="=140916_JDBC/src&lt;org.han.foodstore.dao{FoodStoreDAO.java[FoodStoreDAO" modifiers="513" timestamp="1410935624493"/>
+<typeInfo handle="=140916_JDBC/src&lt;org.han.foodstore.dao{GenericDAO.java[GenericDAO" modifiers="513" timestamp="1410935544906"/>
+<typeInfo handle="=web1/C:\/apache-tomcat-7\/lib\/servlet-api.jar&lt;javax.servlet.http(HttpServletRequestWrapper.class[HttpServletRequestWrapper" modifiers="33" timestamp="1411387790091"/>
 </typeInfoHistroy>

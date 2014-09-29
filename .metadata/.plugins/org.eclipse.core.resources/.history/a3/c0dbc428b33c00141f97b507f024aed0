@@ -1,7 +1,0 @@
-package jdbc2;
-
-import junit.framework.TestCase;
-
-public class TimeTest2 extends TestCase {
-
-}

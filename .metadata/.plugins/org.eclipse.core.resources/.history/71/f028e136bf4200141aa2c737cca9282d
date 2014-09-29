@@ -1,0 +1,8 @@
+package org.han.web;
+
+import 
+import javax.servlet.http.HttpServletRequestWrapper;
+
+public class MyRequest extends HttpServletRequestWrapper {
+
+}

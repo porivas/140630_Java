@@ -1,0 +1,19 @@
+1411387100754	Rename resource 'WebContent2'
+1411388390471	Delete element
+1411426800794	Move 2 resources to 'WebContent'
+1411427029847	Delete element
+1411427362275	Rename resource 'inputAction.jsp'
+1411427374718	Rename resource 'input.jsp'
+1411427560113	Rename resource 'input.old.jsp'
+1411427570262	Rename resource 'inputAction.old.jsp'
+1411434975521	Delete element
+1411441331954	Copy compilation unit
+1411441342913	Rename type 'CopyOfHelloServlet'
+1411521541168	Move compilation units
+1411521561174	Move package
+1411531004221	Move 'inputResult.jsp' to 'WebContent'
+1411534178711	Move 'inputResult.jsp' to 'jsp'
+1411534922889	Move 'inputResult.jsp' to 'WebContent'
+1411535811045	Copy compilation unit
+1411535833324	Move 'inputResult.jsp' to 'jsp'
+1411535843930	Rename type 'CopyOfHelloServlet'

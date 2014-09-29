@@ -1,0 +1,6 @@
+package org.han.web;
+
+@Controller(path="/calc")
+public class CalcController {
+
+}

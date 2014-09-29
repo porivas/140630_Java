@@ -1,0 +1,5 @@
+package org.thinker.mp32.vo;
+
+public class Mp3ServiceImpl {
+
+}

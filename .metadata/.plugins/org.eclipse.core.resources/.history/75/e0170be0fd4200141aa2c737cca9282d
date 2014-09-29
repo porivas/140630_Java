@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import ="org.han.web.*" %>
+<%! // 싱글턴으로 사용하기 위한 변수 선언
+	CalcService service = new CalcService();
+%>
+<%
+	//String v1 = request.getParameter("v1");
+	//String v2 = request.getParameter("v2");
+	Double v1 = new MyRequest(request).getDoubleParameter("v1");
+	Double v2 = new MyRequest(request).getDoubleParameter("v2");
+
+	String oper = request.getParameter("oper");
+	String result;
+	switch (oper){
+		
+		case "plus":
+			
+		break;
+		case "minus":
+			
+		break;
+		case "mul":
+			
+		break;
+		case "div":
+			
+		break;
+	}
+	
+	
+
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,5 +1,0 @@
-package org.han.foodstore.dao;
-
-public interface FoodStoreDAO {
-
-}

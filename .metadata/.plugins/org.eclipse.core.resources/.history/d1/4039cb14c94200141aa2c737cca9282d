@@ -1,0 +1,9 @@
+package org.han.web;
+
+// 경로가 /calc.bit 로 들어오면 동작하도록 만드는 것. 
+@Controller(path="/calc")
+public class CalcController {
+	public CalcController(){
+		System.out.println("CalcController");
+	}
+}

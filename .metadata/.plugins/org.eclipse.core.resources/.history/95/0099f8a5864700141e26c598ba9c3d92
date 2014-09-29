@@ -1,0 +1,10 @@
+package org.test.thinker.service;
+
+import org.test.thinker.service.Mp3ServiceImpl;
+
+public interface Mp3Service {
+	public Mp3Service instance = new Mp3ServiceImpl();
+	
+	public List<MP3> getFolderList ();
+	
+}

@@ -1,0 +1,5 @@
+package org.test.thinker.service;
+
+public interface Mp3Service {
+
+}

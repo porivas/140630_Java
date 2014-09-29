@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		<div id="button">
+		<style type="text/css">
+		  table {
+		     border-collapse: collapse;
+		  }
+		</style>
+		<table border="1" width=ralative>
+			<tr align = "left">
+				<td> 이력서  </td>
+				<td> 자기소개서  </td>
+			</tr>
+		</table>
+		</div>
+		<div id="story2">
+		<type = text/css>
+		<style type="text/css">
+		  table {
+		     border-collapse: collapse;
+		  }
+		</style>
+		<table border="1" width=100%>
+			<tr align = "left">
+				<td> 칼출칼퇴
+				<br> 수당추구
+				<br> 정리해고
+				</td>
+			</tr>
+		</table>
+		</div>
+</body>
+</html>

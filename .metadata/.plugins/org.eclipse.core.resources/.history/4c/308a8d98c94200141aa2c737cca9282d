@@ -1,0 +1,8 @@
+package org.han.web;
+
+import javax.servlet.http.HttpServletResponse;
+
+public interface Executor {
+	public void execute(MyRequest req, HttpServletResponse res) throws Exception;
+	
+}
