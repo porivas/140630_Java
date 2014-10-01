@@ -1,0 +1,22 @@
+package org.thinker.test;
+
+import static org.junit.Assert.fail;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.thinker.dao.TimeDAO;
+
+public class TimeDAOTest {
+	
+	TimeDAO dao;
+	
+	@Before
+	public void setUp() throws Exception {
+		dao = new TimeDAO();
+	}
+	@Test
+	public void test() throws Exception {
+		dao.getTime();
+	}
+
+}

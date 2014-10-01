@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestUnit.logTest" project="141001_mini01" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="logTest" classname="org.han.test.TestUnit" time="0.001"/>
+</testrun>

@@ -1,0 +1,9 @@
+package org.thinker.dao;
+
+public class TimeDAO {
+	
+	public String getTime() throws Exception{
+		
+	}
+
+}

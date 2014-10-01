@@ -1,0 +1,8 @@
+
+public abstract class SQLExecutor {
+
+	public static void main(String[] args) {
+
+	}
+
+}

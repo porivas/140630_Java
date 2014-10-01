@@ -1,0 +1,37 @@
+package org.thinker.web;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
+
+/**
+ * Application Lifecycle Listener implementation class AppListener
+ *
+ */
+@WebListener
+public class AppListener implements ServletContextListener {
+
+    /**
+     * Default constructor. 
+     */
+    public AppListener() {
+        // TODO Auto-generated constructor stub
+    }
+    
+    // 웹 어플리케이션이 올라갈 때 자동으로 내려가는 부분
+	/**
+     * @see ServletContextListener#contextDestroyed(ServletContextEvent)
+     */
+    public void contextDestroyed(ServletContextEvent arg0)  { 
+         // TODO Auto-generated method stub
+    }
+    
+    // 웹 어플리케이션이 올라갈 때 자동으로 호출되는 부분
+	/**
+     * @see ServletContextListener#contextInitialized(ServletContextEvent)
+     */
+    public void contextInitialized(ServletContextEvent arg0)  { 
+         // TODO Auto-generated method stub
+    }
+	
+}

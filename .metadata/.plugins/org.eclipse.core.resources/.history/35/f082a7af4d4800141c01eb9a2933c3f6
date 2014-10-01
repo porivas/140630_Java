@@ -1,0 +1,19 @@
+package org.thinker.dao;
+
+public class TimeDAO {
+	
+	public void getTime() throws Exception{
+		
+		final String sql = "select sysdate from dual";
+		
+		new SQLExecutor() {
+			
+			@Override
+			protected void doJob() {
+				// TODO Auto-generated method stub
+				pstmt = con.prepareStatement(sql);
+			}
+		};
+	}
+
+}

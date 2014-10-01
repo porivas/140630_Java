@@ -1,0 +1,8 @@
+package org.thinker.service;
+
+public class TimeService {
+
+	private TimeDAO dao;
+	
+	
+}

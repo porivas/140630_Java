@@ -1,0 +1,13 @@
+package org.han.vo;
+
+public class UserVO {
+
+	/*userID varchar2(1000),
+  pw varchar2(1000),
+  regDate date default sysdate
+  */
+	
+	private String userID;
+	private String pw;
+	private Date regDate;
+}

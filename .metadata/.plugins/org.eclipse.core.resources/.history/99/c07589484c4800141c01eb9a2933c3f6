@@ -1,0 +1,5 @@
+package org.thinker.dao;
+
+public abstract class SQLExecutor {
+
+}

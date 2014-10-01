@@ -1,0 +1,14 @@
+package org.han.vo;
+
+public class ReviewVO {
+
+	/*
+	 *   rno number,
+  mno number,
+  review varchar2(2000),
+  userID VARCHAR2(1000),
+  regDate date default sysdate
+	 */
+	
+	
+}

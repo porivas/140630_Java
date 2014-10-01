@@ -1,0 +1,16 @@
+package org.thinker.dao;
+
+public class TimeDAO {
+	
+	public void getTime() throws Exception{
+		new SQLExecutor() {
+			
+			@Override
+			protected void doJob() {
+				// TODO Auto-generated method stub
+				
+			}
+		};
+	}
+
+}

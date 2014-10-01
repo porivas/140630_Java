@@ -1,0 +1,26 @@
+package org.han.test;
+
+import static org.junit.Assert.fail;
+
+import org.han.dao.MP3DAO;
+import org.junit.Before;
+import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class TestUnit {
+	private static Logger logger = LoggerFactory.getLogger("controller");
+	private MP3DAO dao;
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+	@Test
+	public void tableDAOTest() throws Exception {
+		dao.getTableList();
+	}
+}

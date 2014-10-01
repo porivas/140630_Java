@@ -1,0 +1,26 @@
+package org.thinker.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public abstract class SQLExecutor {
+	
+	protected Connection con;
+	protected PreparedStatement pstmt;
+	protected ResultSet rs;
+	private void makeConnection() throws Exception{
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		Class.forName("org.apache.commons.dbcp.PoolingDriver");
+		String jdbcDriver = "jdbc:apache:commons:dbcp:/pool";
+		
+		Connection con = DriverManager.getConnection(jdbcDriver);
+	}
+	
+	private void closeAll(){
+		if(rs != null){ try {rs.close(); } catch(Exception e){}};
+	}
+	
+
+}

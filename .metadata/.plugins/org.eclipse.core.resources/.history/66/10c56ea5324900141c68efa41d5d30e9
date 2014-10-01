@@ -1,0 +1,30 @@
+package org.han.vo;
+
+import java.sql.Date;
+
+public class Mp3 {
+	
+	/*
+	 *   mno number,
+  title varchar2(1000),
+  fileName varchar2(1000),
+  descCont varchar2(2000),
+  cate VARCHAR2(50),
+  userID VARCHAR2(1000),
+  rCount number,
+  vCount NUMBER,
+  regdate
+	 */
+	
+	
+	private Integer mno;
+	private String title;
+	private String fileName;
+	private String descCont;
+	private String cate;
+	private String userID;
+	private Integer rCount;
+	private Integer vCount;
+	private Date regDate;
+
+}
