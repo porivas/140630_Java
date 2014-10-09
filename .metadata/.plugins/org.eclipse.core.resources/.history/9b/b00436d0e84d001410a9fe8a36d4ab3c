@@ -1,0 +1,29 @@
+package org.thinker.test;
+
+import static org.junit.Assert.fail;
+
+import java.io.Reader;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.Before;
+import org.junit.Test;
+
+public class TimeTest {
+	
+	SqlSessionFactory sqlMapper;
+
+	@Before
+	public void setUp() throws Exception {
+		
+		Reader reader = Resources.getResourceAsReader("mybatisConfig.xml");
+		sqlMapper = new SqlSessionFactoryBuilder().build(reader);
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

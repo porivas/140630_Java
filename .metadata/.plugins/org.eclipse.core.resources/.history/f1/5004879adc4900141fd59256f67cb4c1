@@ -1,0 +1,14 @@
+package org.han.dao;
+
+public interface GenericDAO<E, R, K> {
+	
+	public void create (E vo)throws Exception;
+	
+	public E read(R maxNum, K minNum)throws Exception;
+
+	public void update(E vo)throws Exception;
+
+	public void delete(R mno)throws Exception;
+	
+
+}

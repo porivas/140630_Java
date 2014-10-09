@@ -1,0 +1,97 @@
+package org.han.web;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.Servlet;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.han.service.MP3Service;
+
+/**
+ * Servlet implementation class MainController
+ */
+@WebServlet("/main")
+public class MainController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public MainController() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+	private MP3Service service;
+	/**
+	 * @see Servlet#init(ServletConfig)
+	 */
+	public void init(ServletConfig config) throws ServletException {
+		// TODO Auto-generated method stub
+		service = 
+				(MP3Service)config.getServletContext().getAttribute("MP3Service");
+	}
+
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		try {
+			request.setAttribute("MP3List", service.mainList());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/mainPage.jsp");
+		dispatcher.forward(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		MP3 mp3 = new MP3(request.getParameter("filename"),
+				request.getParameter("desc"));
+
+		Mp3Service.instance.addMp3(mp3);
+
+		System.out.println(mp3);
+
+		response.sendRedirect("upload");
+		String appPath = new ListController().path;
+		System.out.println(appPath);
+		String key = UUID.randomUUID().toString();
+		String savePath = appPath + File.separator;
+		System.out.println(savePath);
+		for (Part part : request.getParts()) {
+			String filename = extractfilename(part);
+			part.write(savePath + File.separator + key +'_'+ filename);
+		}
+		System.out.println("업로드 프로세스 종료");
+		
+		/**
+		 * Extracts file name from HTTP header content-disposition
+		 */
+		private String extractfilename(Part part) {
+			String contentDisp = part.getHeader("content-disposition");
+			String[] items = contentDisp.split(";");
+			for (String s : items) {
+				if (s.trim().startsWith("filename")) {
+					return s.substring(s.indexOf("=") + 2, s.length() - 1);
+				}
+			}
+			return "";
+		}
+
+	}
+
+}

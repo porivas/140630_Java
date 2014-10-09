@@ -1,0 +1,14 @@
+package org.han.service;
+
+import org.han.dao.MP3DAO1;
+
+public class MP3Service {
+	private MP3DAO1 dao;
+
+	public void setDao(MP3DAO1 dao) {
+		this.dao = dao;
+	}
+	public String getMP3List() throws Exception{
+		return dao.getTableList();
+	}
+}

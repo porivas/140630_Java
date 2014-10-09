@@ -1,0 +1,17 @@
+package ey;
+
+import java.util.Scanner;
+
+public class ey {
+	
+	public static void main(String[] args) {
+		System.out.printf("은영이를 얼마나 사랑하시나요?: ");
+		Scanner sc = new Scanner(System.in);
+		for (int i = 0; i < sc.nextInt(); i++) {
+			System.out.println("♥♥♥♥♥♥♥♥♥♥♥♥♥");
+		}
+
+
+	}
+
+}

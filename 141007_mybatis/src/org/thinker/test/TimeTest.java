@@ -1,0 +1,71 @@
+package org.thinker.test;
+
+import java.io.Reader;
+import java.util.List;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.Before;
+import org.junit.Test;
+import org.thinker.member.MemberVO;
+
+public class TimeTest {
+	
+	SqlSessionFactory sqlMapper;
+
+	@Before
+	public void setUp() throws Exception {
+		
+		Reader reader = Resources.getResourceAsReader("mybatisConfig.xml");
+		sqlMapper = new SqlSessionFactoryBuilder().build(reader);
+	}
+	
+	@Test
+	public void insertTest(){
+		try(SqlSession session = sqlMapper.openSession()){
+			
+			MemberVO vo = new MemberVO();
+			vo.setUserid("user48");
+			vo.setUserpw("dksdkffiwba");
+			vo.setUsername("윤호");
+			vo.setPhone("01028159190");
+			vo.setEmail("yunho0130@gmail.com");
+			session.insert("org.thinker.member.MemberMapper.c  reate", vo);
+			session.commit();
+			session.close();
+		}
+	}
+
+	@Test
+	public void test() {
+		System.out.println(sqlMapper);
+		SqlSession session = sqlMapper.openSession();
+		String time = session.selectOne("org.thinker.time.TimeMapper.getTime");
+		System.out.println(time);
+		session.close();
+	}
+	
+	@Test
+	public void readTest(){
+			try(SqlSession session = sqlMapper.openSession()){
+			// 게시판에 한꺼번에 뿌려줄 때 사용. 
+//			List<MemberVO> list = session.selectList("org.thinker.member.MemberMapper.read");
+//			System.out.println(list);
+			MemberVO vo = session.selectOne("org.thinker.member.MemberMapper.read", "user08");
+			System.out.println(vo);
+				
+		}
+	}
+	
+	@Test
+	public void deleteTest(){
+		try(SqlSession session = sqlMapper.openSession()){
+
+		session.delete("org.thinker.member.MemberMapper.delete", "user48");		
+		session.commit();
+		}
+	}
+
+}

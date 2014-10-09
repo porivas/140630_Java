@@ -1,0 +1,4 @@
+
+public class SimpleCriteria implements Criteria {
+	private int page;
+}

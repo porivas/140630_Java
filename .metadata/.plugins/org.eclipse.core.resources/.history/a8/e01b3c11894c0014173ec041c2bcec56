@@ -1,0 +1,9 @@
+package ey;
+
+public class ey {
+	
+	public static void main(String[] args) {
+		System.out.println("은영아 사랑해");
+	}
+
+}

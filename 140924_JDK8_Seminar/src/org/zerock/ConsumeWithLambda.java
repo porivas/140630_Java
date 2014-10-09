@@ -1,0 +1,24 @@
+package org.zerock;
+import java.util.function.Consumer;
+
+
+public class ConsumeWithLambda {
+
+	public void sandwich(String name, Consumer<String> consumer){
+		
+		System.out.println("ª˜µÂ¿ßƒ° ∂—≤±");
+		consumer.accept(name);
+		System.out.println("ª˜µÂ¿ßƒ° πŸ¥⁄");
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		ConsumeWithLambda obj = new ConsumeWithLambda();
+		
+		obj.sandwich("«‹", (x) -> System.out.println("æÁ ∏π¿Ã ≥÷æÓ¡÷ººø‰"));
+		
+		
+	}
+	
+}

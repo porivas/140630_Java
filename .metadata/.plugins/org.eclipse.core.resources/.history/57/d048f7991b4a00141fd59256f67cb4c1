@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<html>
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+    	<h3><font color='black'> [ upload page ver1.2]
+
+	<form method="post" action="upload" enctype="multipart/form-data" >
+	파일 <input type = "file" name="filename">
+<!-- 
+	<p> 파일설명 <input type = "text" name="desc"></p> 
+	 -->
+	<input type='submit' value='upload'></font></h3>
+	</form>
+</body>
+</html>

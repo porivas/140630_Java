@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;UploadController.java&apos; to &apos;141001_mini01/src&apos;&#x0D;&#x0A;- Original project: &apos;140929_mp3_2_part2&apos;&#x0D;&#x0A;- Destination element: &apos;141001_mini01/src&apos;&#x0D;&#x0A;- Original element: &apos;org.han.mp32.controller.UploadController.java&apos;" description="Copy compilation unit" destination="=141001_mini01/src" element1="/src&lt;org.han.mp32.controller{UploadController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1412241916794" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,5 @@
+package org.thinker.member;
+
+public class MemberVO {
+
+}

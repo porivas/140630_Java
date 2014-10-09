@@ -1,0 +1,39 @@
+package org.thinker.test;
+
+import java.io.Reader;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.Before;
+import org.junit.Test;
+
+public class TimeTest {
+	
+	SqlSessionFactory sqlMapper;
+
+	@Before
+	public void setUp() throws Exception {
+		
+		Reader reader = Resources.getResourceAsReader("mybatisConfig.xml");
+		sqlMapper = new SqlSessionFactoryBuilder().build(reader);
+	}
+	
+	@Test
+	public void insertTest(){
+		try(){
+			
+		}
+	}
+
+	@Test
+	public void test() {
+		System.out.println(sqlMapper);
+		SqlSession session = sqlMapper.openSession();
+		String time = session.selectOne("org.thinker.time.TimeMapper.getTime");
+		System.out.println(time);
+		session.close();
+	}
+
+}
