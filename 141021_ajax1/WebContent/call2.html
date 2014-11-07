@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id = "resultDiv">
+
+
+</div>
+<div>
+	<h1>Welcome! </h1>
+</div>
+
+    <script>
+        var resultDiv = document.getElementById("resultDiv");
+
+        var xhr = new XMLHttpRequest();
+        console.log(xhr);
+//        xhr.open("get", "data.xml", true);
+        xhr.open("get", "http://192.168.0.73:8080/Time", true);
+        xhr.send(null);
+
+        xhr.onreadystatechange = function(){
+
+            if(xhr.readyState == 4 /*완료상태*/ && xhr.status == 200 /*정상상태*/){
+               /* console.log(xhr.responseText);
+                console.log(xhr.responseXML); 과거에는 이 2개만 썼다. */
+//                console.log(xhr.responseText);
+//            resultDiv.innerHTML = xhr.responseText;
+                console.log("로그1");
+                console.log(xhr.responseXML.documentElement.getElementsByTagName("book"));
+                var book = document.getElementsByTagName("books");
+                console.log("로그2");
+                console.log(book);
+
+                var xmlDoc = xhr.responseXML;
+                var books = xmlDoc.getElementsByTagName("book");
+            }
+        }
+       /* 자바에서는 함수를 파라미터로 받을 수 없다. 하지만, 다른 언어는 함수를 파라미터로 받는 것이 가능하다. */
+
+
+
+    </script>
+</body>
+</html>
